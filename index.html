@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Sequence</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Cosmic Sequence</h1>
+  <p>Drag and drop the planets to arrange them in the correct order from the Sun.</p>
+
+  <div class="container">
+    <div class="sun">The Sun</div>
+    <div id="slots" class="slots">
+      <div class="drop-slot" data-index="1"></div>
+      <div class="drop-slot" data-index="2"></div>
+      <div class="drop-slot" data-index="3"></div>
+      <div class="drop-slot" data-index="4"></div>
+      <div class="drop-slot" data-index="5"></div>
+      <div class="drop-slot" data-index="6"></div>
+      <div class="drop-slot" data-index="7"></div>
+      <div class="drop-slot" data-index="8"></div>
+    </div>
+  </div>
+
+  <div id="planets" class="planets">
+    <div class="planet mercury" draggable="true" id="Mercury">Mercury</div>
+    <div class="planet venus" draggable="true" id="Venus">Venus</div>
+    <div class="planet earth" draggable="true" id="Earth">Earth</div>
+    <div class="planet mars" draggable="true" id="Mars">Mars</div>
+    <div class="planet jupiter" draggable="true" id="Jupiter">Jupiter</div>
+    <div class="planet saturn" draggable="true" id="Saturn">Saturn</div>
+    <div class="planet uranus" draggable="true" id="Uranus">Uranus</div>
+    <div class="planet neptune" draggable="true" id="Neptune">Neptune</div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="checkAnswer()">Check Answer</button>
+    <button onclick="resetGame()">Reset Game</button>
+    <button onclick="showHint()">Show Hint</button>
+  </div>
+</body>
+</html>
